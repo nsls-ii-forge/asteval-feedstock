@@ -1,0 +1,49 @@
+{% set name = "asteval" %}
+{% set version = "0.9.14" %}
+{% set sha256 = "7c81fee6707a7a28e8beae891b858535a7e61f9ce275a0a4cf5f428fbc934cb8" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  host:
+    - python
+    - numpy
+    - pip
+    - six
+  run:
+    - python
+    - numpy
+    - six
+
+test:
+  imports:
+    - {{ name }}
+
+about:
+  home: https://github.com/newville/asteval
+  license: BSD
+  license_file: LICENSE
+  summary: 'Simple and robust expressions evaluator for Python'
+
+  # The remaining entries in this section are optional, but recommended
+  description: |
+    asteval is a simple and robust evaluator of
+    Python expressions and statements, using Python's ast module.
+  doc_url: http://newville.github.io/asteval/
+  dev_url: https://github.com/newville/asteval
+
+extra:
+  recipe-maintainers:
+    - souravsingh
