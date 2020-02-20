@@ -1,6 +1,6 @@
 {% set name = "asteval" %}
-{% set version = "0.9.14" %}
-{% set sha256 = "7c81fee6707a7a28e8beae891b858535a7e61f9ce275a0a4cf5f428fbc934cb8" %}
+{% set version = "0.9.18" %}
+{% set sha256 = "5d64e18b8a72c2c7ae8f9b70d1f80b68bbcaa98c1c0d7047c35489d03209bc86" %}
 
 package:
   name: {{ name|lower }}
