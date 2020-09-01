@@ -1,6 +1,6 @@
 {% set name = "asteval" %}
-{% set version = "0.9.18" %}
-{% set sha256 = "5d64e18b8a72c2c7ae8f9b70d1f80b68bbcaa98c1c0d7047c35489d03209bc86" %}
+{% set version = "0.9.19" %}
+{% set sha256 = "445f3a59df692c0c0ff2868c0bbf9b293884db4a9f9a13c73555485ba75ed08b" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   home: https://github.com/newville/asteval
   license: BSD
   license_file: LICENSE
-  summary: 'Simple and robust expressions evaluator for Python'
+  summary: Simple and robust expressions evaluator for Python
 
   # The remaining entries in this section are optional, but recommended
   description: |
