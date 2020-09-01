@@ -5,7 +5,7 @@ Home: https://github.com/newville/asteval
 
 Package license: BSD
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Simple and robust expressions evaluator for Python
 
