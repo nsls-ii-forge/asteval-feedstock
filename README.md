@@ -5,9 +5,13 @@ Home: https://github.com/newville/asteval
 
 Package license: BSD
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/asteval-feedstock/blob/master/LICENSE.txt)
 
 Summary: Simple and robust expressions evaluator for Python
+
+Development: https://github.com/newville/asteval
+
+Documentation: http://newville.github.io/asteval/
 
 asteval is a simple and robust evaluator of
 Python expressions and statements, using Python's ast module.
